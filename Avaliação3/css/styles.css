@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FADADD; 
+    padding-top: 80px;
+}
+
+header {
+    background-color: #FFB6C1; 
+    color: #333;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.cart-list {
+    list-style-type: none;
+}
+
+.cart-list li {
+    margin-bottom: 10px;
+}
+
+.alert {
+    padding: 10px;
+    font-size: 1.2em;
+}

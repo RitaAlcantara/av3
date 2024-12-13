@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja de Cosméticos franciny</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cosméticos Francine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="my-5 text-center">Nossos Produtos</h2>
+
+        <div class="row">
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="hidratante.webp" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Creme Hidratante franciny</h5>
+                        <p class="card-text">Creme hidratante para pele suave e bem cuidada.</p>
+                        <p class="card-text"><strong>R$ 79,90</strong></p>
+                        <button class="btn btn-primary" onclick="addToCart('Creme Hidratante franciny', 79.90)">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="skincare.jpg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">SKINCARE da franciny</h5>
+                        <p class="card-text">SKINCARE da franciny profundamente a pele.</p>
+                        <p class="card-text"><strong>R$ 49,90</strong></p>
+                        <button class="btn btn-primary" onclick="addToCart('SKINCARE da franciny', 49.90)">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="batom.webp" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Batom Matte Francine</h5>
+                        <p class="card-text">Batom matte de longa duração e cores vibrantes.</p>
+                        <p class="card-text"><strong>R$ 39,90</strong></p>
+                        <button class="btn btn-primary" onclick="addToCart('Batom Matte Franciny', 39.90)">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h4>Carrinho de Compras</h4>
+            <ul id="cartList">
+           
+            </ul>
+            <button class="btn btn-success" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
